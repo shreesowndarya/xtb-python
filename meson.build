@@ -51,7 +51,7 @@ else
   xtb_header = xtb_prj.get_variable('xtb_header')
 endif
 
-pymod = import('/opt/conda/bin/python3.9')
+pymod = import('python')
 python = pymod.find_installation(
   'python@0@'.format(get_option('py')),
   modules: [
