@@ -58,7 +58,7 @@ python = pymod.find_installation(
     'cffi',
   ],
 )
-python_dep = python.dependency()
+python_dep = python.dependency(required: true)
 
 # Python's CFFI is horrible in working with preprocessor statements,
 # therefore, we have to preprocess the header before passing it to the ffibuilder
